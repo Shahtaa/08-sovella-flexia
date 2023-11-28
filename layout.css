@@ -9,6 +9,16 @@ body {
   padding: 1rem;
   background-color: #03898b;
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.wrapper > * {
+  padding: 1rem;
+  flex-grow: 1;
+  flex-basis: 100%;
+}
 header {
   background-color: #fed602;
   padding: 1rem;
@@ -42,13 +52,32 @@ footer {
 }
 /*Tablet-näkymä*/
 @media only screen and (min-width: 426px) {
-  body {
-    background-color: lightblue;
+  .wrapper {
+    flex-direction: row;
+  }
+  .aside-1 {
+    flex-basis: auto;
+  }
+  .aside-2 {
+    flex-basis: auto;
   }
 }
 /*Desktop-näkymä*/
 @media only screen and (min-width: 769px) {
-  body {
-    background-color: lightgreen;
+  .aside-1 {
+    order: 1;
+    flex-basis: 0rem;
+  }
+  .main {
+    order: 2;
+    flex-basis: 40rem;
+  }
+
+  .aside-2 {
+    order: 3;
+    flex-basis: 0rem;
+  }
+  .footer {
+    order: 4;
   }
 }
