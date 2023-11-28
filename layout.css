@@ -1,0 +1,54 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+  background-color: #03898b;
+}
+header {
+  background-color: #fed602;
+  padding: 1rem;
+}
+main {
+  background-color: #c56000;
+  padding: 1rem;
+}
+.aside-1 {
+  background-color: #3bb371;
+  padding: 1rem;
+}
+.aside-2 {
+  background-color: #2c8b58;
+  padding: 1rem;
+}
+footer {
+  background-color: #92ec91;
+  padding: 1rem;
+}
+
+.parent {
+}
+.parent > * {
+}
+.parent .aside-1 {
+}
+.parent main {
+}
+.parent .aside-2 {
+}
+/*Tablet-näkymä*/
+@media only screen and (min-width: 426px) {
+  body {
+    background-color: lightblue;
+  }
+}
+/*Desktop-näkymä*/
+@media only screen and (min-width: 769px) {
+  body {
+    background-color: lightgreen;
+  }
+}
