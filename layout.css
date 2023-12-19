@@ -43,6 +43,35 @@ main {
   background-color: #c56000;
   padding: 1rem;
 }
+
+.some {
+  padding: 0;
+}
+
+.some__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.some__item {
+  color: #fff;
+  flex-basis: 100%;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 1.5rem;
+}
+
+.facebook {
+  background-color: #3b5899;
+}
+
+.twitter {
+  background-color: #55adef;
+}
+
+.email {
+  background-color: #777777;
+}
 .aside-1 {
   background-color: #3bb371;
   padding: 1rem;
